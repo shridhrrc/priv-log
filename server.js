@@ -20,7 +20,7 @@ mongoose.connect('mongodb://admin:admin@10.1.1.5/sectest', {
 });
 
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error.:'));
+db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
 });
 
